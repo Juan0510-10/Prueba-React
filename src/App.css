@@ -1,0 +1,115 @@
+:root {
+  /* fallback/local vars in case index.css not applied */
+  --bg: #000000;
+  --text: #D4AF37;
+  --muted: #444444;
+  --card-bg: #0b0b0b;
+  --border: #D4AF37;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+.header {
+  width: 90%;
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+  padding: 1rem 0;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--border), #6f5b2b55);
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+}
+
+/* PROGRAMAS */
+.programas {
+  width: 90%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.programas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.programa-card {
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--card-bg);
+  color: var(--text);
+}
+
+/* CONTACTO */
+.contacto {
+  width: 90%;
+  border-top: 2px solid var(--border);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: transparent;
+  color: var(--text);
+}
+
+.contacto-form button {
+  background-color: transparent;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.contacto-form button:hover {
+  background-color: rgba(212,175,55,0.08);
+}

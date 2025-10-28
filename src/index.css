@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg: #000000; /* negro */
+	--text: #D4AF37; /* dorado */
+	--muted: #444444; /* para bordes sutiles */
+	--card-bg: #0b0b0b; /* tarjetas oscuras */
+	--border: #D4AF37;
+}
+
+/* Global base styles for the black & gold theme */
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial;
+	background-color: var(--bg);
+	color: var(--text);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Links and buttons */
+a {
+	color: var(--text);
+	text-decoration: none;
+}
+
+button {
+	color: var(--text);
+}
+
+/* Utility helpers for components that use older CSS classes */
+.bg-primary { background-color: var(--bg) !important; }
+.text-gold { color: var(--text) !important; }
+.card-dark { background-color: var(--card-bg); border-color: var(--border); }
